@@ -3,7 +3,7 @@ import styles from './Gallery.module.css';
 
 const frames = [
   { img: 'https://images.unsplash.com/photo-1544025162-d76694265947?w=700&q=80', label: 'Live Fire Grill Station' },
-  { img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&q=80', label: 'The Braai Pit' },
+  { img: 'https://cdn.tasteatlas.com/images/dishes/21969a86fa63497ca7bd15dc0db7de6d.jpg', label: 'The Braai Pit' },
   { img: 'https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?w=700&q=80', label: 'Tomahawk, Fire-Finished' },
   { img: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=700&q=80', label: 'Premium Cuts Selection' },
   { img: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=700&q=80', label: 'The Full Braai Spread' },
