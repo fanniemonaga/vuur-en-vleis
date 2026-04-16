@@ -1,0 +1,94 @@
+.section { background: var(--deep); }
+
+.sub {
+  font-size: 1rem;
+  font-style: italic;
+  color: var(--stone);
+  margin-top: 0.8rem;
+  margin-bottom: 3.5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.card {
+  background: var(--char);
+  padding: 2.2rem;
+  border: 1px solid var(--border);
+  position: relative;
+  transition: border-color 0.25s;
+}
+.card:hover { border-color: var(--bordHi); }
+
+.stars { display: flex; gap: 0.2rem; margin-bottom: 1.2rem; }
+.star { color: var(--gilt); font-size: 0.95rem; }
+
+.text {
+  font-size: 1rem;
+  font-style: italic;
+  color: rgba(243,233,212,0.7);
+  line-height: 1.75;
+  margin-bottom: 1.8rem;
+}
+
+.reviewer {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  border-top: 1px solid var(--border);
+  padding-top: 1.2rem;
+}
+.avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: var(--ember);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.1rem;
+  color: var(--cream);
+  flex-shrink: 0;
+}
+.name {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  color: var(--cream);
+  margin-bottom: 0.2rem;
+}
+.meta {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.58rem;
+  letter-spacing: 0.08em;
+  color: var(--stone);
+}
+
+.trust {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 3.5rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid var(--border);
+}
+.trustBadge {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.6rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gilt);
+  border: 1px solid rgba(180,120,10,0.35);
+  padding: 0.5rem 1.2rem;
+}
+
+@media (max-width: 1024px) {
+  .grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+  .grid { grid-template-columns: 1fr; }
+}

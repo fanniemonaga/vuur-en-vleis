@@ -1,0 +1,29 @@
+.strip {
+  background: var(--ember);
+  padding: 0.9rem 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.inner {
+  display: inline-flex;
+  gap: 0;
+  animation: marquee 28s linear infinite;
+}
+.item {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(243,233,212,0.85);
+  display: inline-flex;
+  align-items: center;
+  padding: 0 1.5rem;
+}
+.sep {
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  background: rgba(243,233,212,0.4);
+  border-radius: 50%;
+  margin-left: 1.5rem;
+}

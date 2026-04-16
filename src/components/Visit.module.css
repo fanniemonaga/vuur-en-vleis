@@ -1,0 +1,95 @@
+.visit {
+  background: var(--char);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  align-items: start;
+}
+
+.hoursList {
+  margin-top: 2rem;
+  border-top: 1px solid var(--border);
+}
+.hourRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.95rem;
+}
+.hourRow strong { color: var(--cream); font-weight: 600; }
+.hourTime {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  color: var(--ember2);
+}
+.note {
+  margin-top: 1.2rem;
+  font-size: 0.85rem;
+  font-style: italic;
+  color: var(--stone);
+  line-height: 1.6;
+}
+
+.locationCard {
+  background: var(--deep);
+  padding: 2.8rem;
+  border: 1px solid var(--border);
+  margin-top: 2.5rem;
+}
+.locRow {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  margin-bottom: 1.6rem;
+  font-size: 0.95rem;
+  color: rgba(243,233,212,0.62);
+}
+.locRow:last-of-type { margin-bottom: 0; }
+.locIcon { font-size: 1rem; margin-top: 0.1rem; flex-shrink: 0; }
+.locLabel {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.6rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--stone);
+  display: block;
+  margin-bottom: 0.25rem;
+}
+.locRow a {
+  color: rgba(243,233,212,0.62);
+  transition: color 0.2s;
+}
+.locRow a:hover { color: var(--cream); }
+
+.locLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  margin-top: 2rem;
+  padding-top: 1.8rem;
+  border-top: 1px solid var(--border);
+}
+.locLink {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.63rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ember2);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  transition: color 0.2s;
+}
+.locLink:hover { color: var(--cream); }
+
+@media (max-width: 900px) {
+  .visit {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    padding: 4.5rem 1.5rem;
+  }
+}

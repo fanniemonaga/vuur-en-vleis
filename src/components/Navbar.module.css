@@ -1,0 +1,134 @@
+.nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.4rem 3.5rem;
+  background: rgba(10,7,4,0.94);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border-bottom: 1px solid var(--border);
+  transition: padding 0.3s;
+}
+.nav.compact { padding: 0.75rem 3.5rem; }
+
+.logo {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.7rem;
+  letter-spacing: 0.1em;
+  color: var(--cream);
+  text-decoration: none;
+  line-height: 1;
+}
+.logo em { color: var(--ember); font-style: normal; }
+
+.links {
+  display: flex;
+  gap: 2.8rem;
+  list-style: none;
+}
+.links a {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--stone);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.links a:hover { color: var(--cream); }
+
+.navRight {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+}
+.divider {
+  width: 1px;
+  height: 1.5rem;
+  background: var(--border);
+}
+
+.cta {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  background: var(--ember);
+  color: var(--cream);
+  padding: 0.7rem 1.6rem;
+  text-decoration: none;
+  transition: background 0.2s;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.cta:hover { background: var(--ember2); }
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--cream);
+  padding: 4px;
+}
+
+.mobileMenu {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 99;
+  background: var(--ink);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+}
+.mobileMenu.open { display: flex; }
+.mobileMenu a {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.6rem;
+  letter-spacing: 0.08em;
+  color: var(--cream);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.mobileMenu a:hover { color: var(--ember); }
+
+.mobileCta {
+  font-family: 'DM Mono', monospace !important;
+  font-size: 0.7rem !important;
+  letter-spacing: 0.18em !important;
+  text-transform: uppercase !important;
+  background: var(--ember);
+  color: var(--cream) !important;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  transition: background 0.2s;
+  margin-top: 1rem;
+}
+.mobileCta:hover { background: var(--ember2); color: var(--cream) !important; }
+
+.mobileClose {
+  position: absolute;
+  top: 1.8rem;
+  right: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--stone);
+  transition: color 0.2s;
+}
+.mobileClose:hover { color: var(--cream); }
+
+@media (max-width: 900px) {
+  .links { display: none; }
+  .divider { display: none; }
+  .cta { display: none; }
+  .hamburger { display: block; }
+  .nav { padding: 1.2rem 1.5rem; }
+  .nav.compact { padding: 0.8rem 1.5rem; }
+}
