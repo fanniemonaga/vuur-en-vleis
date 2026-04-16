@@ -34,7 +34,7 @@ export default async function handler(req, res) {
   // 2. Add RESEND_API_KEY to your Vercel environment variables
   // 3. Uncomment the block below
   // ─────────────────────────────────────────────────────────────
-  /*
+  
   const { Resend } = await import('resend');
   const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -70,7 +70,7 @@ export default async function handler(req, res) {
       <p>We'll confirm within 2 hours. If you need to reach us: +27 12 345 6789</p>
     `,
   });
-  */
+  
 
   return res.status(200).json({
     success: true,
