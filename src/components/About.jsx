@@ -16,7 +16,7 @@ export default function About() {
     <section id="about" className={styles.about}>
       <div className={`${styles.imgWrap} reveal`} ref={imgRef}>
         <img
-          src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=85"
+          src="https://images.pexels.com/photos/699953/pexels-photo-699953.jpeg?auto=compress&cs=tinysrgb&w=800"
           alt="Chef grilling over live coals at Vuur en Vleis"
           loading="lazy"
         />
