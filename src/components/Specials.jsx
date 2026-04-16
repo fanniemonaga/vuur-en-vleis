@@ -126,7 +126,7 @@ export default function Specials() {
           </div>
           <div className={styles.featureImgWrap}>
             <img
-              src="https://i.pinimg.com/1200x/cb/cc/b4/cbccb4d5a9f1c5b1b2d8f7e3a4d2c1e0.jpg"
+              src="https://media.timeout.com/images/106002324/1024/768/image.jpg"
               alt="The Vuur Feast — Tomahawk for two"
               loading="lazy"
             />
@@ -137,7 +137,7 @@ export default function Specials() {
             Tomahawk + 2 sides + craft beer flight + dessert for two.
             A full fire experience at a celebration price.
           </div>
-          <div className={styles.featurePrice}>R899 <span>for two</span></div>
+          <div className={styles.featurePrice}>R499 <span>for two</span></div>
           <button
             className={styles.featureBtn}
             onClick={() => {
